@@ -1,6 +1,9 @@
 <h1>All Products</h1>
+<h2>Number of products: <%= @product_count %></h2>
+<h2>Average price: <%= number_to_currency(@average_price, :unit => "$") %></h2>
+<h2>Quantity of stock: <%= @quantity_of_stock %></h2>
 <ul>
-  <% @all_products.each do |product| %>
+  <% @products.each do |product| %>
     <li><%= product.title %></li>
   <% end %>
 </ul>

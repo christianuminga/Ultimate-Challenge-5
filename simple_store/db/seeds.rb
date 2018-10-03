@@ -19,3 +19,6 @@
                                :price          => price,
                                :stock_quantity => stock_quantity)
 end
+
+puts "After seeding the database: "
+puts " - There are #{Product.count} products."
